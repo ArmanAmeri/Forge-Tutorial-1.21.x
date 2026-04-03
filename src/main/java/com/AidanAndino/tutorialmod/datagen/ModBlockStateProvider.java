@@ -2,9 +2,12 @@ package com.AidanAndino.tutorialmod.datagen;
 
 import com.AidanAndino.tutorialmod.TutorialMod;
 import com.AidanAndino.tutorialmod.block.ModBlocks;
+import com.AidanAndino.tutorialmod.block.custom.AlexandriteLampBlock;
 import net.minecraft.data.PackOutput;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.Block;
 import net.minecraftforge.client.model.generators.BlockStateProvider;
+import net.minecraftforge.client.model.generators.ConfiguredModel;
 import net.minecraftforge.client.model.generators.ModelFile;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -44,6 +47,8 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockItem(ModBlocks.ALEXANDRITE_PRESSURE_PLATE);
         blockItem(ModBlocks.ALEXANDRITE_FENCE_GATE);
         blockItem(ModBlocks.ALEXANDRITE_TRAPDOOR, "_bottom");
+
+        customLamp();
     }
 
     private void blockWithItem(RegistryObject<Block> blockRegistryObject) {
@@ -58,5 +63,19 @@ public class ModBlockStateProvider extends BlockStateProvider {
     private void blockItem(RegistryObject<? extends Block> blockRegistryObject, String appendix) {
         simpleBlockItem(blockRegistryObject.get(), new ModelFile.UncheckedModelFile("tutorialmod:block/" +
                 ForgeRegistries.BLOCKS.getKey(blockRegistryObject.get()).getPath() + appendix));
+    }
+
+    private void customLamp() {
+        getVariantBuilder(ModBlocks.ALEXANDRITE_LAMP.get()).forAllStates(state -> {
+            if(state.getValue(AlexandriteLampBlock.CLICKED)) {
+                return new ConfiguredModel[]{new ConfiguredModel(models().cubeAll("alexandrite_lamp_on",
+                        ResourceLocation.fromNamespaceAndPath(TutorialMod.MOD_ID, "block/" + "alexandrite_lamp_on")))};
+            } else {
+                return new ConfiguredModel[]{new ConfiguredModel(models().cubeAll("alexandrite_lamp_off",
+                        ResourceLocation.fromNamespaceAndPath(TutorialMod.MOD_ID, "block/" + "alexandrite_lamp_off")))};
+            }
+        });
+        simpleBlockItem(ModBlocks.ALEXANDRITE_LAMP.get(), models().cubeAll("alexandrite_lamp_on",
+                ResourceLocation.fromNamespaceAndPath(TutorialMod.MOD_ID, "block/" + "alexandrite_lamp_on")));
     }
 }

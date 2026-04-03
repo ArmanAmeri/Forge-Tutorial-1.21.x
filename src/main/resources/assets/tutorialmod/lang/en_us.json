@@ -7,6 +7,14 @@
   "item.tutorialmod.cola": "Cola",
   "item.tutorialmod.aurora_ashes": "Aurora Ashes",
 
+  "item.tutorialmod.alexandrite_sword": "Alexandrite Sword",
+  "item.tutorialmod.alexandrite_pickaxe": "Alexandrite Pickaxe",
+  "item.tutorialmod.alexandrite_shovel": "Alexandrite Shovel",
+  "item.tutorialmod.alexandrite_axe": "Alexandrite Axe",
+  "item.tutorialmod.alexandrite_hoe": "Alexandrite Hoe",
+
+  "item.tutorialmod.alexandrite_hammer": "Alexandrite Hammer",
+
   "block.tutorialmod.alexandrite_block": "Block of Alexandrite",
   "block.tutorialmod.raw_alexandrite_block": "Block of Raw Alexandrite",
   "block.tutorialmod.alexandrite_ore": "Alexandrite Ore",
@@ -26,6 +34,8 @@
 
   "block.tutorialmod.alexandrite_door": "Alexandrite Door",
   "block.tutorialmod.alexandrite_trapdoor": "Alexandrite Trapdoor",
+
+  "block.tutorialmod.alexandrite_lamp": "Alexandrite Lamp",
 
   "creativetab.tutorialmod.alexandrite_items": "Alexandrite Items",
   "creativetab.tutorialmod.alexandrite_blocks": "Alexandrite Blocks",

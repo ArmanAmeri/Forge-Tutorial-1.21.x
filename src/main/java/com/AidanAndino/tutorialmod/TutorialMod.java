@@ -1,6 +1,7 @@
 package com.AidanAndino.tutorialmod;
 
 import com.AidanAndino.tutorialmod.block.ModBlocks;
+import com.AidanAndino.tutorialmod.component.ModDataComponentTypes;
 import com.AidanAndino.tutorialmod.item.ModCreativeModeTabs;
 import com.AidanAndino.tutorialmod.item.ModItems;
 import com.mojang.logging.LogUtils;
@@ -39,6 +40,8 @@ public class TutorialMod {
 
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
+
+        ModDataComponentTypes.register(modEventBus);
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);

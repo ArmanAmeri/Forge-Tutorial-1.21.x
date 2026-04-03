@@ -1,6 +1,7 @@
 package com.AidanAndino.tutorialmod.block;
 
 import com.AidanAndino.tutorialmod.TutorialMod;
+import com.AidanAndino.tutorialmod.block.custom.AlexandriteLampBlock;
 import com.AidanAndino.tutorialmod.block.custom.MagicBlock;
 import com.AidanAndino.tutorialmod.item.ModItems;
 import net.minecraft.util.valueproviders.UniformInt;
@@ -69,7 +70,11 @@ public class ModBlocks {
     public static final RegistryObject<DoorBlock> ALEXANDRITE_DOOR= registerBlock("alexandrite_door",
             () -> new DoorBlock(BlockSetType.IRON , BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops().noOcclusion()));
     public static final RegistryObject<TrapDoorBlock> ALEXANDRITE_TRAPDOOR = registerBlock("alexandrite_trapdoor",
-            () -> new TrapDoorBlock(BlockSetType.IRON, BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops()));
+            () -> new TrapDoorBlock(BlockSetType.IRON, BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops().noOcclusion()));
+
+    public static final RegistryObject<Block> ALEXANDRITE_LAMP = registerBlock("alexandrite_lamp",
+            () -> new AlexandriteLampBlock(BlockBehaviour.Properties.of().strength(3f)
+                    .lightLevel(state -> state.getValue(AlexandriteLampBlock.CLICKED) ? 15 : 0)));
 
 
 
