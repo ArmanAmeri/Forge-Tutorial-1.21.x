@@ -49,7 +49,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         basicItem(ModItems.ALEXANDRITE.get());
         basicItem(ModItems.RAW_ALEXANDRITE.get());
 
-        basicItem(ModItems.CHISEL.get());
+        // basicItem(ModItems.CHISEL.get());
         basicItem(ModItems.PIZZA.get());
         basicItem(ModItems.COLA.get());
         basicItem(ModItems.AURORA_ASHES.get());
@@ -72,6 +72,10 @@ public class ModItemModelProvider extends ItemModelProvider {
         trimmedArmorItem(ModItems.ALEXANDRITE_CHESTPLATE);
         trimmedArmorItem(ModItems.ALEXANDRITE_LEGGINGS);
         trimmedArmorItem(ModItems.ALEXANDRITE_BOOTS);
+
+        basicItem(ModItems.ALEXANDRITE_HORSE_ARMOR.get());
+
+        basicItem(ModItems.KAUPEN_SMITHING_TEMPLATE.get());
     }
 
     // Shoutout to El_Redstoniano for making this
