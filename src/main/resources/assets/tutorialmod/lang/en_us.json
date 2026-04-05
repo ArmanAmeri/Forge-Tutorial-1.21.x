@@ -26,6 +26,9 @@
 
   "item.tutorialmod.star_bow": "Star Bow",
 
+  "item.tutorialmod.bar_brawl_music_disc": "Bar Brawl Music Disc",
+  "item.tutorialmod.bar_brawl_music_disc.desc": "Bryan Tech - Bar Brawl (CC0)",
+
   "block.tutorialmod.alexandrite_block": "Block of Alexandrite",
   "block.tutorialmod.raw_alexandrite_block": "Block of Raw Alexandrite",
   "block.tutorialmod.alexandrite_ore": "Alexandrite Ore",
@@ -47,6 +50,19 @@
   "block.tutorialmod.alexandrite_trapdoor": "Alexandrite Trapdoor",
 
   "block.tutorialmod.alexandrite_lamp": "Alexandrite Lamp",
+
+  "effect.tutorialmod.slimey": "Slimey",
+
+  "item.minecraft.potion.effect.slimey_potion": "Slimey Potion",
+  "item.minecraft.splash_potion.effect.slimey_potion": "Slimey Splash Potion",
+  "item.minecraft.lingering_potion.effect.slimey_potion": "Slimey Lingering Potion",
+
+  "painting.tutorialmod.world.title": "World",
+  "painting.tutorialmod.world.author": "NanoAttack",
+  "painting.tutorialmod.shrimp.title": "Shrimp",
+  "painting.tutorialmod.shrimp.author": "NanoAttack",
+  "painting.tutorialmod.saw_them.title": "Saw Them",
+  "painting.tutorialmod.saw_them.author": "NanoAttack",
 
   "creativetab.tutorialmod.alexandrite_items": "Alexandrite Items",
   "creativetab.tutorialmod.alexandrite_blocks": "Alexandrite Blocks",

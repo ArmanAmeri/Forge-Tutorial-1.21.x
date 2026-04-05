@@ -2,8 +2,11 @@ package com.AidanAndino.tutorialmod;
 
 import com.AidanAndino.tutorialmod.block.ModBlocks;
 import com.AidanAndino.tutorialmod.component.ModDataComponentTypes;
+import com.AidanAndino.tutorialmod.effect.ModEffects;
 import com.AidanAndino.tutorialmod.item.ModCreativeModeTabs;
 import com.AidanAndino.tutorialmod.item.ModItems;
+import com.AidanAndino.tutorialmod.potion.ModPotions;
+import com.AidanAndino.tutorialmod.sound.ModSounds;
 import com.AidanAndino.tutorialmod.util.ModItemProperties;
 import com.mojang.logging.LogUtils;
 import net.minecraft.world.item.CreativeModeTabs;
@@ -43,6 +46,10 @@ public class TutorialMod {
         ModBlocks.register(modEventBus);
 
         ModDataComponentTypes.register(modEventBus);
+        ModSounds.register(modEventBus);
+
+        ModEffects.register(modEventBus);
+        ModPotions.register(modEventBus);
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);

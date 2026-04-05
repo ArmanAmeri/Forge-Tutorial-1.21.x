@@ -4,6 +4,7 @@ import com.AidanAndino.tutorialmod.TutorialMod;
 import com.AidanAndino.tutorialmod.block.custom.AlexandriteLampBlock;
 import com.AidanAndino.tutorialmod.block.custom.MagicBlock;
 import com.AidanAndino.tutorialmod.item.ModItems;
+import com.AidanAndino.tutorialmod.sound.ModSounds;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
@@ -42,7 +43,7 @@ public class ModBlocks {
 
 
     public static final RegistryObject<Block> MAGIC_BLOCK = registerBlock("magic_block",
-            () -> new MagicBlock(BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops()));
+            () -> new MagicBlock(BlockBehaviour.Properties.of().strength(2f).noLootTable().sound(ModSounds.MAGIC_BLOCK_SOUNDS)));
 
 
     public static final RegistryObject<StairBlock> ALEXANDRITE_STAIRS = registerBlock("alexandrite_stairs",

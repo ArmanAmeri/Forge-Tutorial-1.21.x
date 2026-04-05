@@ -2,6 +2,7 @@ package com.AidanAndino.tutorialmod.item;
 
 import com.AidanAndino.tutorialmod.TutorialMod;
 import com.AidanAndino.tutorialmod.item.custom.*;
+import com.AidanAndino.tutorialmod.sound.ModSounds;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.*;
@@ -88,6 +89,9 @@ public class ModItems {
 
     public static final RegistryObject<Item> STAR_BOW = ITEMS.register("star_bow",
             () -> new BowItem(new Item.Properties().durability(600)));
+
+    public static final RegistryObject<Item> BAR_BRAWL_MUSIC_DISC = ITEMS.register("bar_brawl_music_disc",
+            () -> new Item(new Item.Properties().jukeboxPlayable(ModSounds.BAR_BRAWL_KEY).stacksTo(1)));
 
 
     public static void register(IEventBus eventBus) {

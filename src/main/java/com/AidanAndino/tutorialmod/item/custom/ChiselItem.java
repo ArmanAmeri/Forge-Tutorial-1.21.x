@@ -2,6 +2,7 @@ package com.AidanAndino.tutorialmod.item.custom;
 
 import com.AidanAndino.tutorialmod.block.ModBlocks;
 import com.AidanAndino.tutorialmod.component.ModDataComponentTypes;
+import com.AidanAndino.tutorialmod.sound.ModSounds;
 import net.minecraft.client.gui.screens.Screen;
 import net.minecraft.network.chat.Component;
 import net.minecraft.server.level.ServerLevel;
@@ -18,6 +19,7 @@ import net.minecraft.world.item.context.UseOnContext;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
+import net.minecraftforge.client.model.obj.ObjModel;
 
 import java.util.List;
 import java.util.Map;
@@ -47,7 +49,7 @@ public class ChiselItem extends Item {
                 pContext.getItemInHand().hurtAndBreak(1, ((ServerLevel) level), ((ServerPlayer) pContext.getPlayer()),
                         item -> pContext.getPlayer().onEquippedItemBroken(item, EquipmentSlot.MAINHAND));
 
-                level.playSound(null, pContext.getClickedPos(), SoundEvents.GRINDSTONE_USE, SoundSource.BLOCKS);
+                level.playSound(null, pContext.getClickedPos(), ModSounds.CHISEL_USE.get(), SoundSource.BLOCKS);
 
                 pContext.getItemInHand().set(ModDataComponentTypes.COORDINATES.get(), pContext.getClickedPos());
             }

@@ -2,6 +2,7 @@ package com.AidanAndino.tutorialmod.event;
 
 import com.AidanAndino.tutorialmod.TutorialMod;
 import com.AidanAndino.tutorialmod.item.custom.HammerItem;
+import com.AidanAndino.tutorialmod.potion.ModPotions;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Holder;
 import net.minecraft.core.particles.ParticleTypes;
@@ -20,12 +21,15 @@ import net.minecraft.world.entity.animal.Sheep;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
+import net.minecraft.world.item.alchemy.PotionBrewing;
+import net.minecraft.world.item.alchemy.Potions;
 import net.minecraft.world.level.ClipContext;
 import net.minecraft.world.level.Explosion;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.phys.AABB;
 import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.phys.Vec3;
+import net.minecraftforge.event.brewing.BrewingRecipeRegisterEvent;
 import net.minecraftforge.event.entity.living.LivingDamageEvent;
 import net.minecraftforge.event.entity.player.PlayerInteractEvent;
 import net.minecraftforge.event.level.BlockEvent;
@@ -78,6 +82,13 @@ public class ModEvents {
 
         }
 
+    }
+
+    @SubscribeEvent
+    public static void onBrewingRecipeRegister(BrewingRecipeRegisterEvent event) {
+        PotionBrewing.Builder builder = event.getBuilder();
+
+        builder.addMix(Potions.AWKWARD, Items.SLIME_BALL, ModPotions.SLIMEY_POTION.getHolder().get());
     }
 
 
