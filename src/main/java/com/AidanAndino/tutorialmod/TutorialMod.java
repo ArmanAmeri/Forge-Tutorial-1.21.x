@@ -3,6 +3,7 @@ package com.AidanAndino.tutorialmod;
 import com.AidanAndino.tutorialmod.block.ModBlocks;
 import com.AidanAndino.tutorialmod.component.ModDataComponentTypes;
 import com.AidanAndino.tutorialmod.effect.ModEffects;
+import com.AidanAndino.tutorialmod.enchantment.ModEnchantmentEffects;
 import com.AidanAndino.tutorialmod.item.ModCreativeModeTabs;
 import com.AidanAndino.tutorialmod.item.ModItems;
 import com.AidanAndino.tutorialmod.potion.ModPotions;
@@ -50,6 +51,8 @@ public class TutorialMod {
 
         ModEffects.register(modEventBus);
         ModPotions.register(modEventBus);
+
+        ModEnchantmentEffects.register(modEventBus);
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
