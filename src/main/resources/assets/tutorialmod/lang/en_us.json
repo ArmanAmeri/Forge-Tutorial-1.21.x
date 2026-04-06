@@ -34,6 +34,10 @@
   "block.tutorialmod.alexandrite_ore": "Alexandrite Ore",
   "block.tutorialmod.alexandrite_deepslate_ore": "Alexandrite Deepslate Ore",
 
+  "block.tutorialmod.alexandrite_end_ore": "Alexandrite End Ore",
+  "block.tutorialmod.alexandrite_nether_ore": "Alexandrite Nether Ore",
+
+
   "block.tutorialmod.magic_block": "Magic Block",
 
   "block.tutorialmod.alexandrite_stairs": "Alexandrite Stairs",
@@ -56,6 +60,12 @@
   "item.minecraft.potion.effect.slimey_potion": "Slimey Potion",
   "item.minecraft.splash_potion.effect.slimey_potion": "Slimey Splash Potion",
   "item.minecraft.lingering_potion.effect.slimey_potion": "Slimey Lingering Potion",
+
+  "item.tutorialmod.kohlrabi_seeds": "Kohlrabi Seeds",
+  "block.tutorialmod.kohlrabi_crop": "Kohlrabi Crop",
+
+  "item.tutorialmod.honey_berries": "Honey Berries",
+  "block.tutorialmod.honey_berry_bush": "Honey Berry Bush",
 
   "painting.tutorialmod.world.title": "World",
   "painting.tutorialmod.world.author": "NanoAttack",

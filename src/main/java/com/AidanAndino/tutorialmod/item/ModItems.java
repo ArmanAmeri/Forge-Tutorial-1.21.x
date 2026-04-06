@@ -1,6 +1,7 @@
 package com.AidanAndino.tutorialmod.item;
 
 import com.AidanAndino.tutorialmod.TutorialMod;
+import com.AidanAndino.tutorialmod.block.ModBlocks;
 import com.AidanAndino.tutorialmod.item.custom.*;
 import com.AidanAndino.tutorialmod.sound.ModSounds;
 import net.minecraft.network.chat.Component;
@@ -92,6 +93,12 @@ public class ModItems {
 
     public static final RegistryObject<Item> BAR_BRAWL_MUSIC_DISC = ITEMS.register("bar_brawl_music_disc",
             () -> new Item(new Item.Properties().jukeboxPlayable(ModSounds.BAR_BRAWL_KEY).stacksTo(1)));
+
+    public static final RegistryObject<Item> KOHLRABI_SEEDS = ITEMS.register("kohlrabi_seeds",
+            () -> new ItemNameBlockItem(ModBlocks.KOHLRABI_CROP.get(), new Item.Properties()));
+
+    public static final RegistryObject<Item> HONEY_BERRIES = ITEMS.register("honey_berries",
+            () -> new ItemNameBlockItem(ModBlocks.HONEY_BERRY_BUSH.get(), new Item.Properties().food(ModFoodProperties.HONEY_BERRY)));
 
 
     public static void register(IEventBus eventBus) {

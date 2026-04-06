@@ -1,4 +1,4 @@
-// 1.21	2026-04-05T14:05:53.544185	Item Models: tutorialmod
+// 1.21	2026-04-06T13:05:05.4263201	Item Models: tutorialmod
 9c36309b9b22da0f2a38fda68096fcc3013c449b assets/tutorialmod/models/item/alexandrite.json
 073373f3fe2f1164adae1d7cdcb2e21c2c4c821e assets/tutorialmod/models/item/alexandrite_axe.json
 fab521949bb8b5526d5f1e145bf1b1dca7ea8e14 assets/tutorialmod/models/item/alexandrite_boots.json
@@ -58,6 +58,8 @@ b9a62ed3fc1c7a5a754d17fb335771f6cfa7112d assets/tutorialmod/models/item/alexandr
 0cea8cc5a03c2c4533fb4623452fc74d7754c5fe assets/tutorialmod/models/item/aurora_ashes.json
 f746b64540daf2ab6302b3ec01a78490c48fc10b assets/tutorialmod/models/item/bar_brawl_music_disc.json
 e6b7e2bff6a18b9f566cd8c2127b3c587d6b5b40 assets/tutorialmod/models/item/cola.json
+b4d76c98e3f66c7f9fe3667a7292ab19b617b44a assets/tutorialmod/models/item/honey_berries.json
 449182fb0ac0479cfb756ef062a8c183fc5a3c2a assets/tutorialmod/models/item/kaupen_armor_trim_smithing_template.json
+ade71b0b23199457854c018cfb8f4f7404d25b56 assets/tutorialmod/models/item/kohlrabi_seeds.json
 e6e7bd7e7ead58891c4f3ed9f58c1037043d3207 assets/tutorialmod/models/item/pizza.json
 618bcb87cb7acab7c54afbe2ed857af447c05872 assets/tutorialmod/models/item/raw_alexandrite.json
