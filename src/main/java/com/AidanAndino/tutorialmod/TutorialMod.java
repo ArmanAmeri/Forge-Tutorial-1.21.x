@@ -4,12 +4,15 @@ import com.AidanAndino.tutorialmod.block.ModBlocks;
 import com.AidanAndino.tutorialmod.component.ModDataComponentTypes;
 import com.AidanAndino.tutorialmod.effect.ModEffects;
 import com.AidanAndino.tutorialmod.enchantment.ModEnchantmentEffects;
+import com.AidanAndino.tutorialmod.entity.ModEntities;
+import com.AidanAndino.tutorialmod.entity.client.TriceratopsRenderer;
 import com.AidanAndino.tutorialmod.item.ModCreativeModeTabs;
 import com.AidanAndino.tutorialmod.item.ModItems;
 import com.AidanAndino.tutorialmod.potion.ModPotions;
 import com.AidanAndino.tutorialmod.sound.ModSounds;
 import com.AidanAndino.tutorialmod.util.ModItemProperties;
 import com.mojang.logging.LogUtils;
+import net.minecraft.client.renderer.entity.EntityRenderers;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.level.block.ComposterBlock;
 import net.minecraftforge.api.distmarker.Dist;
@@ -54,6 +57,7 @@ public class TutorialMod {
         ModPotions.register(modEventBus);
 
         ModEnchantmentEffects.register(modEventBus);
+        ModEntities.register(modEventBus);
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
@@ -95,6 +99,8 @@ public class TutorialMod {
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event) {
             ModItemProperties.addCustomItemProperties();
+
+            EntityRenderers.register(ModEntities.TRICERATOPS.get(), TriceratopsRenderer::new);
         }
     }
 }

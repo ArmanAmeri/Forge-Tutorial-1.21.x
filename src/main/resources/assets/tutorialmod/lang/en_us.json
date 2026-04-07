@@ -29,6 +29,8 @@
   "item.tutorialmod.bar_brawl_music_disc": "Bar Brawl Music Disc",
   "item.tutorialmod.bar_brawl_music_disc.desc": "Bryan Tech - Bar Brawl (CC0)",
 
+  "item.tutorialmod.triceratops_spawn_egg": "Triceratops Spawn Egg",
+
   "block.tutorialmod.alexandrite_block": "Block of Alexandrite",
   "block.tutorialmod.raw_alexandrite_block": "Block of Raw Alexandrite",
   "block.tutorialmod.alexandrite_ore": "Alexandrite Ore",
@@ -96,5 +98,7 @@
   "tooltip.tutorialmod.cola": "The Second Greatest Creation Of Mankind.",
 
   "trim_pattern.tutorialmod.kaupen": "Kaupen Armor Trim",
-  "trim_material.tutorialmod.alexandrite": "Alexandrite Material"
+  "trim_material.tutorialmod.alexandrite": "Alexandrite Material",
+
+  "entity.tutorialmod.triceratops": "Triceratops"
 }
