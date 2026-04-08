@@ -56,6 +56,8 @@ public class ModCreativeModeTabs {
 
                         output.accept(ModItems.TOMAHAWK.get());
 
+                        output.accept(ModItems.RADIATION_STAFF.get());
+
 
 
                     }).build());
@@ -99,6 +101,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.WALNUT_LEAVES.get());
 
                         output.accept(ModBlocks.CHAIR.get());
+
 
 
                     }).build());

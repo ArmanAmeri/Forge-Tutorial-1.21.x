@@ -5,8 +5,10 @@ import com.AidanAndino.tutorialmod.component.ModDataComponentTypes;
 import com.AidanAndino.tutorialmod.effect.ModEffects;
 import com.AidanAndino.tutorialmod.enchantment.ModEnchantmentEffects;
 import com.AidanAndino.tutorialmod.entity.ModEntities;
+import com.AidanAndino.tutorialmod.entity.client.ChairRenderer;
 import com.AidanAndino.tutorialmod.entity.client.TomahawkProjectileRenderer;
 import com.AidanAndino.tutorialmod.entity.client.TriceratopsRenderer;
+import com.AidanAndino.tutorialmod.entity.custom.ChairEntity;
 import com.AidanAndino.tutorialmod.item.ModCreativeModeTabs;
 import com.AidanAndino.tutorialmod.item.ModItems;
 import com.AidanAndino.tutorialmod.potion.ModPotions;
@@ -103,6 +105,8 @@ public class TutorialMod {
 
             EntityRenderers.register(ModEntities.TRICERATOPS.get(), TriceratopsRenderer::new);
             EntityRenderers.register(ModEntities.TOMAHAWK.get(), TomahawkProjectileRenderer::new);
+
+            EntityRenderers.register(ModEntities.CHAIR.get(), ChairRenderer::new);
         }
     }
 }
