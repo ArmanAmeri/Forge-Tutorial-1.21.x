@@ -31,6 +31,8 @@
 
   "item.tutorialmod.triceratops_spawn_egg": "Triceratops Spawn Egg",
 
+  "item.tutorialmod.tomahawk": "Tomahawk",
+
   "block.tutorialmod.alexandrite_block": "Block of Alexandrite",
   "block.tutorialmod.raw_alexandrite_block": "Block of Raw Alexandrite",
   "block.tutorialmod.alexandrite_ore": "Alexandrite Ore",
@@ -64,6 +66,8 @@
   "block.tutorialmod.alexandrite_trapdoor": "Alexandrite Trapdoor",
 
   "block.tutorialmod.alexandrite_lamp": "Alexandrite Lamp",
+
+  "block.tutorialmod.chair": "Chair",
 
   "effect.tutorialmod.slimey": "Slimey",
 
@@ -100,5 +104,7 @@
   "trim_pattern.tutorialmod.kaupen": "Kaupen Armor Trim",
   "trim_material.tutorialmod.alexandrite": "Alexandrite Material",
 
-  "entity.tutorialmod.triceratops": "Triceratops"
+  "entity.tutorialmod.triceratops": "Triceratops",
+
+  "entity.tutorialmod.tomahawk": "Tomahawk"
 }

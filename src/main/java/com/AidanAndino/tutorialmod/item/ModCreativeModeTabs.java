@@ -54,6 +54,8 @@ public class ModCreativeModeTabs {
 
                         output.accept(ModItems.TRICERATOPS_SPAWN_EGG.get());
 
+                        output.accept(ModItems.TOMAHAWK.get());
+
 
 
                     }).build());
@@ -95,6 +97,8 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.WALNUT_SAPLING.get());
 
                         output.accept(ModBlocks.WALNUT_LEAVES.get());
+
+                        output.accept(ModBlocks.CHAIR.get());
 
 
                     }).build());
