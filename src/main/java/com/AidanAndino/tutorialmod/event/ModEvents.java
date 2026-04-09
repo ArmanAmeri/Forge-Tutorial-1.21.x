@@ -1,6 +1,7 @@
 package com.AidanAndino.tutorialmod.event;
 
 import com.AidanAndino.tutorialmod.TutorialMod;
+import com.AidanAndino.tutorialmod.explosion.CustomExplosion;
 import com.AidanAndino.tutorialmod.item.custom.HammerItem;
 import com.AidanAndino.tutorialmod.potion.ModPotions;
 import net.minecraft.core.BlockPos;
@@ -97,10 +98,10 @@ public class ModEvents {
         Player player = event.getEntity();
         ItemStack stack = player.getMainHandItem();
 
-        if (stack.getItem() == Items.BREEZE_ROD) { // your custom item
+        if (stack.getItem() == Items.BREEZE_ROD) {
             if (!player.level().isClientSide) {
 
-                // 🔭 Raycast (where player is looking)
+                // Raycast (where player is looking)
                 Vec3 start = player.getEyePosition();
                 Vec3 look = player.getLookAngle();
                 Vec3 end = start.add(look.scale(100));
@@ -116,16 +117,8 @@ public class ModEvents {
                 BlockHitResult result = player.level().clip(context);
                 BlockPos hitPos = result.getBlockPos();
 
-                // 💥 Create normal explosion
-                Level level = player.level();
-                level.explode(
-                        player,          // the player causing it (can be null)
-                        hitPos.getX() + 0.5,
-                        hitPos.getY() + 0.5,
-                        hitPos.getZ() + 0.5,
-                        50.0f,            // explosion radius
-                        Level.ExplosionInteraction.MOB // destroys blocks normally
-                );
+                
+                CustomExplosion.explode(player.level(), hitPos.getX() + 0.5, hitPos.getY() + 0.5, hitPos.getZ() + 0.5, 80.0f, 1.6f, 1000.0f);
             }
         }
     }
