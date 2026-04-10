@@ -11,6 +11,8 @@ import com.AidanAndino.tutorialmod.entity.client.TriceratopsRenderer;
 import com.AidanAndino.tutorialmod.entity.custom.ChairEntity;
 import com.AidanAndino.tutorialmod.item.ModCreativeModeTabs;
 import com.AidanAndino.tutorialmod.item.ModItems;
+import com.AidanAndino.tutorialmod.particle.AlexandriteParticles;
+import com.AidanAndino.tutorialmod.particle.ModParticles;
 import com.AidanAndino.tutorialmod.potion.ModPotions;
 import com.AidanAndino.tutorialmod.sound.ModSounds;
 import com.AidanAndino.tutorialmod.util.ModItemProperties;
@@ -19,6 +21,7 @@ import net.minecraft.client.renderer.entity.EntityRenderers;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.level.block.ComposterBlock;
 import net.minecraftforge.api.distmarker.Dist;
+import net.minecraftforge.client.event.RegisterParticleProvidersEvent;
 import net.minecraftforge.common.CreativeModeTabRegistry;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
@@ -61,6 +64,8 @@ public class TutorialMod {
 
         ModEnchantmentEffects.register(modEventBus);
         ModEntities.register(modEventBus);
+
+        ModParticles.register(modEventBus);
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
@@ -107,6 +112,11 @@ public class TutorialMod {
             EntityRenderers.register(ModEntities.TOMAHAWK.get(), TomahawkProjectileRenderer::new);
 
             EntityRenderers.register(ModEntities.CHAIR.get(), ChairRenderer::new);
+        }
+
+        @SubscribeEvent
+        public static void registerParticleProvider(RegisterParticleProvidersEvent event) {
+            event.registerSpriteSet(ModParticles.ALEXANDRITE_PARTICLES.get(), AlexandriteParticles.Provider::new);
         }
     }
 }
